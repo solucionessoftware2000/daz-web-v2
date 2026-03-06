@@ -8,6 +8,7 @@ import {
   Camera,
   Package,
   ChevronLeft,
+  GraduationCap,
 } from "lucide-react";
 
 // ========================
@@ -41,6 +42,116 @@ interface ServicesCatalogProps {
 // Demo data (puedes reemplazar por tu API)
 // ========================
 const demoData: Category[] = [
+  {
+    id: "plataforma-educativa",
+    title: "Plataforma Educativa",
+    icon: <GraduationCap className="w-8 h-8" />,
+    color: "from-indigo-400 to-violet-500",
+    subcategories: [
+      {
+        id: "suite-educativa",
+        title: "Suite Educativa Integral",
+        description:
+          "La más completa del mercado que incluye CRM, SIS, LMS y todos los módulos para la gestión y administración de entidades educativas. Certificados ISO 27001 y 9001, con presencia en 6 países.",
+        images: [
+          {
+            src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
+            alt: "Plataforma educativa",
+          },
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6JYnp5s2VqsKa7unt94SBVE3a1nPz7aUiGQ&s",
+            alt: "Gestión educativa",
+          },
+          {
+            src: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop",
+            alt: "Tecnología educativa",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "seguridad-videovigilancia",
+    title: "Seguridad y Videovigilancia",
+    icon: <Camera className="w-8 h-8" />,
+    color: "from-rose-400 to-red-500",
+    subcategories: [
+      {
+        id: "ciberseguridad-proactiva",
+        title: "Ciberseguridad Proactiva",
+        description:
+          "Sistemas de seguridad integral para proteger sus activos 24/7.",
+        images: [
+          {
+            src: "https://techassist24.com/wp-content/uploads/2025/03/tenweb_media_rj9fdyuwi.webp",
+            alt: "Ciberseguridad",
+          },
+          {
+            src: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop",
+            alt: "Protección digital",
+          },
+          {
+            src: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1200&auto=format&fit=crop",
+            alt: "Seguridad informática",
+          },
+        ],
+      },
+      {
+        id: "video-vigilancia-ia",
+        title: "Video vigilancia con IA",
+        description:
+          "Sistema de Inteligencia Artificial que transforma tu sistema de cámaras actuales en un agente en tiempo real de seguridad y protección.",
+        images: [
+          {
+            src: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop",
+            alt: "Videovigilancia con IA",
+          },
+          {
+            src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+            alt: "Monitoreo inteligente",
+          },
+          {
+            src: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop",
+            alt: "Análisis inteligente de seguridad",
+          },
+        ],
+      },
+      {
+        id: "cctv",
+        title: "CCTV IP y Análogo",
+        description:
+          "Diseño e implementación de soluciones de videovigilancia con grabación y acceso remoto.",
+        images: [
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbocGikdVUYE-NgngNsCTMvm6ThtrtkZihw&s",
+          },
+          {
+            src: "https://gongusca.com/wp-content/uploads/2023/07/DIAGRAMA-DE-CONEXION-SISTEMA-CCTV-ANALOGO.webp",
+          },
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4PN4r0i_jIItjpt_JMtBfjQ5iqEeCXe00zA&s",
+          },
+        ],
+      },
+      {
+        id: "control-acceso",
+        title: "Control de Acceso",
+        description:
+          "Biometría, tarjetas y credenciales con auditoría y roles.",
+        images: [
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuEJ3SEUfgcScc4xzFR4DXePF55cDSmZ73Qw&s",
+          },
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_4DuIHnlZuIx7nps5dyIOwEFuKteFqPYPg&s",
+          },
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLf1-ASRG3lt3LQ438s_d0dqMyEZniOvfpQ&s",
+          },
+        ],
+      },
+    ],
+  },
   {
     id: "infra-cloud",
     title: "Infraestructura y Cloud",
@@ -188,9 +299,9 @@ const demoData: Category[] = [
           {
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8SxtghnfLgW0mssXpSK-mhbIsPHTv9LWsQ&s",
           },
-					{
-						src: "https://www.infordata.com.pe/wp-content/uploads/2025/04/productos-destacados.IFDTver3._01.png"
-					}
+          {
+            src: "https://www.infordata.com.pe/wp-content/uploads/2025/04/productos-destacados.IFDTver3._01.png",
+          },
         ],
       },
       {
@@ -202,12 +313,12 @@ const demoData: Category[] = [
           {
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Ru-fAQ3P9QNIflgNXKsFNFLXqMoC7ds_vw&s",
           },
-					{
-						src: "https://blog.invgate.com/hubfs/cumplimiento-de-licencias-de-software.jpg"
-					},
-					{
-						src: "https://cpl.thalesgroup.com/sites/default/files/content/SM_pages/sm-general-image-21.jpg"
-					}
+          {
+            src: "https://blog.invgate.com/hubfs/cumplimiento-de-licencias-de-software.jpg",
+          },
+          {
+            src: "https://cpl.thalesgroup.com/sites/default/files/content/SM_pages/sm-general-image-21.jpg",
+          },
         ],
       },
     ],
@@ -222,7 +333,7 @@ const demoData: Category[] = [
         id: "apps-web-moviles",
         title: "Apps Web & Móviles",
         description:
-          "Desarrollo full‑stack, integración de APIs y despliegues CI/CD.",
+          "Desarrollo full-stack, integración de APIs y despliegues CI/CD.",
         images: [
           {
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGrcm_S5zxSjrZ02xc9Vfdu4kXivX4wGEXFA&s",
@@ -230,9 +341,9 @@ const demoData: Category[] = [
           {
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-mnzCEaLdpTYn9aCPP1ksczfFWyCina9TYQ&s",
           },
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUkBd0EKWU9Pq87A4ySmwrM39fl4ApS6YLJg&s"
-					}
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUkBd0EKWU9Pq87A4ySmwrM39fl4ApS6YLJg&s",
+          },
         ],
       },
       {
@@ -244,54 +355,12 @@ const demoData: Category[] = [
           {
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_hFQjZhqXrW7C3Ek9L7dP9ZQAtz-3woyFqA&s",
           },
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLvYhPVvCSlt0QKVnluGsFiknRQJT0b4gKA&s"
-					},
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS69s5twQoGf-gBNgxU7w7fgKW7bHSb1f688A&s",
-					}
-        ],
-      },
-    ],
-  },
-  {
-    id: "seguridad-videovigilancia",
-    title: "Seguridad y Videovigilancia",
-    icon: <Camera className="w-8 h-8" />,
-    color: "from-rose-400 to-red-500",
-    subcategories: [
-      {
-        id: "cctv",
-        title: "CCTV IP y Análogo",
-        description:
-          "Diseño e implementación de soluciones de videovigilancia con grabación y acceso remoto.",
-        images: [
           {
-            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbocGikdVUYE-NgngNsCTMvm6ThtrtkZihw&s",
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLvYhPVvCSlt0QKVnluGsFiknRQJT0b4gKA&s",
           },
           {
-            src: "https://gongusca.com/wp-content/uploads/2023/07/DIAGRAMA-DE-CONEXION-SISTEMA-CCTV-ANALOGO.webp",
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS69s5twQoGf-gBNgxU7w7fgKW7bHSb1f688A&s",
           },
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4PN4r0i_jIItjpt_JMtBfjQ5iqEeCXe00zA&s"
-					}
-        ],
-      },
-      {
-        id: "control-acceso",
-        title: "Control de Acceso",
-        description:
-          "Biometría, tarjetas y credenciales con auditoría y roles.",
-        images: [
-          {
-            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuEJ3SEUfgcScc4xzFR4DXePF55cDSmZ73Qw&s",
-          },
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_4DuIHnlZuIx7nps5dyIOwEFuKteFqPYPg&s"
-					},
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLf1-ASRG3lt3LQ438s_d0dqMyEZniOvfpQ&s"
-					}
         ],
       },
     ],
@@ -310,12 +379,12 @@ const demoData: Category[] = [
           {
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlyGtGHZwl8LXm3FWRZk9bL5NhsSwGXs2l1w&s",
           },
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1XOnjYRXfVmWE5V0_1kw9u_KSVEt9hkKHQ&s"
-					},
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgUd4mIDjWMJm-jojjoff9OFEI7zAIUh7TsA&s"
-					}
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1XOnjYRXfVmWE5V0_1kw9u_KSVEt9hkKHQ&s",
+          },
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgUd4mIDjWMJm-jojjoff9OFEI7zAIUh7TsA&s",
+          },
         ],
       },
       {
@@ -327,12 +396,12 @@ const demoData: Category[] = [
           {
             src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCjNFjzH0tLOzknYIMLv6Bc3jG-83KWwatmg&s",
           },
-					{
-						src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAdD9-NMxonEbecr0_fiHtD7w_KItH5IIPYQ&s"
-					},
-					{
-						src: "https://http2.mlstatic.com/D_NQ_NP_866035-MPE93689542333_092025-O-silla-ergonomica-escritorio-oficina-giratoria-soporte-lumbar.webp"
-					}
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAdD9-NMxonEbecr0_fiHtD7w_KItH5IIPYQ&s",
+          },
+          {
+            src: "https://http2.mlstatic.com/D_NQ_NP_866035-MPE93689542333_092025-O-silla-ergonomica-escritorio-oficina-giratoria-soporte-lumbar.webp",
+          },
         ],
       },
     ],

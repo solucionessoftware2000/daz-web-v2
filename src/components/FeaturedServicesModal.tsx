@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { X, ArrowLeft, ArrowRight, MessageCircle } from "lucide-react";
 
 // Las URLS y WHATSAPP_NUMBER se mantienen igual
+const EDUCATIVE_IMAGE_URL =
+  "https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1200&auto=format&fit=crop";
+const CYBER_IMAGE_URL =
+  "https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=1200&auto=format&fit=crop";
 const SECURITY_IMAGE_URL =
   "https://techassist24.com/wp-content/uploads/2025/03/tenweb_media_rj9fdyuwi.webp";
 const NUBE_IMAGE_URL =
@@ -12,6 +16,22 @@ const WHATSAPP_NUMBER = "+50765207865";
 
 // --- Datos de los Servicios Destacados ---
 const featuredServices = [
+  {
+    name: "Plataforma educativa",
+    image: EDUCATIVE_IMAGE_URL,
+    description:
+      "La más completa del Mercado que incluye, CRM, SIS, LMS y todos los módulos para la gestión y administración de entidades educativas. Certificados ISO 27001 y 9001 y presencia en 6 países.",
+    whatsappMessage:
+      "Hola, me gustaría recibir más información sobre su Plataforma Educativa.",
+  },
+  {
+    name: "Video vigilancia con IA",
+    image: CYBER_IMAGE_URL,
+    description:
+      "Sistema de Inteligencia Artificial que transforma tu sistema de cámaras actuales en un agente en tiempo real de seguridad y protección.",
+    whatsappMessage:
+      "Hola, me gustaría recibir más información sobre su sistema de Video Vigilancia con IA.",
+  },
   {
     name: "Ciberseguridad Proactiva",
     image: SECURITY_IMAGE_URL,
